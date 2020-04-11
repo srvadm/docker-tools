@@ -7,13 +7,9 @@ Docker-Tools is part of the SrvAdm Project
 **Imapsync**
 
 ```bash
-docker run -rm srvadm/tools:imapsync  \
-  –host1 server1.example.com          \
-  –user1 mail@example.com             \
-  –passfile1 file_with_password1      \
-  –host2 server2.example.com          \
-  –user2 mail@example.com             \
-  –passfile2 file_with_password2
+docker run --rm srvadm/tools:imapsync                                                   \
+  –-host1 server1.example.com –-user1 mail@example.com –-passfile1 file_with_password1  \
+  –-host2 server2.example.com –-user2 mail@example.com –-passfile2 file_with_password2
 ```
 
 **passwd**
