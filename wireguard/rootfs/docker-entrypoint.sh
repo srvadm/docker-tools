@@ -13,6 +13,7 @@ PublicKey = %pubkey%
 AllowedIPs = 10.10.1.10
 fi
 EOF
+fi
 
 if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "start" ]; then
   wg-quick up wg0
