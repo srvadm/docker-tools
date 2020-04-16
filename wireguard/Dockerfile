@@ -7,4 +7,4 @@ COPY rootfs /
 
 VOLUME ["/etc/wireguard"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["wg"]
+CMD ["wg-quick", "-h"]

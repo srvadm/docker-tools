@@ -26,4 +26,8 @@ else
   echo "$@"
 fi
 
+if [ "$@" == "start" ]; then
+  echo "start"
+fi
+
 "$@"
