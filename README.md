@@ -2,9 +2,7 @@
 
 Docker-Tools is part of the SrvAdm Project
 
-# Usage
-
-**Imapsync**
+## Imapsync
 
 ```bash
 docker run --rm srvadm/tools:imapsync                                                   \
@@ -12,7 +10,7 @@ docker run --rm srvadm/tools:imapsync                                           
   –-host2 server2.example.com –-user2 mail@example.com –-passfile2 file_with_password2
 ```
 
-**passwd**
+## passwd
 
 The -s switch is always given
 
