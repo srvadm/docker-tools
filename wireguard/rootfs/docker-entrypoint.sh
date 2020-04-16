@@ -15,13 +15,13 @@ fi
 EOF
 fi
 
-if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "start" ]; then
-  wg-quick up wg0
-  while true
-  do
-    continue
-  done
-fi
+#if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "start" ]; then
+#  wg-quick up wg0
+#  while true
+#  do
+#    continue
+#  done
+#fi
 
 echo "$@"
 
