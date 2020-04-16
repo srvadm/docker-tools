@@ -23,11 +23,5 @@ if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "start" ]; then
     continue
   done
 else
-  echo "$@"
+  "$@"
 fi
-
-if [ "$@" == "start" ]; then
-  echo "start"
-fi
-
-"$@"
