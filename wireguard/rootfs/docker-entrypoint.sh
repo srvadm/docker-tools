@@ -16,7 +16,11 @@ fi
 EOF
 fi
 
-if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "start" ]; then
+if [ "$@" == "setup" ]; then
+  umask 077
+  wg genkey | tee privatekey | wg pubkey > publickey
+
+if [ -f '/etc/wireguard/wg0.conf' ] && [ "$@" == "up" ]; then
   wg-quick up wg0
   while true
   do
